@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e4f1ef">
+<title>AccessEase | دسترسی برای همه</title>
+<style>
+:root{font-family:Tahoma,Arial,sans-serif;color:#263b49;background:#f5f9fa}
+*{box-sizing:border-box}
+body{margin:0}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:white;border-bottom:1px solid #e9eff0}
+.brand{font-size:21px;font-weight:bold;color:#477e79}
+nav{display:flex;gap:22px;font-size:13px;color:#637782}
+nav a{color:inherit;text-decoration:none}
+.hero{padding:68px 8% 60px;background:linear-gradient(130deg,#e4f1ef,#edf4f7);text-align:center}
+.tag{display:inline-block;background:white;padding:8px 15px;border-radius:30px;color:#548f89;font-size:12px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.7;margin:20px auto 12px;color:#284b53}
+.hero p{font-size:14px;line-height:2.2;color:#60747b;max-width:570px;margin:auto}
+.primary{margin-top:24px;background:#548f89;color:white;border:0;padding:14px 25px;border-radius:10px;font-size:14px;cursor:pointer}
+section{padding:48px 7%}
+h2{text-align:center;font-size:24px;color:#365b60;margin:0 0 10px}
+.sub{text-align:center;font-size:13px;color:#829197;margin:0 0 28px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:white;padding:25px 17px;border-radius:15px;border:1px solid #eaf0f0;text-align:center}
+.ico{font-size:30px;margin-bottom:12px}
+.card h3{font-size:15px;color:#3d6666}
+.card p{font-size:12px;line-height:2;color:#7b8b91}
+.demo-area{background:#edf4f3}
+.demo{background:white;border:1px solid #e8eeee;border-radius:16px;padding:26px;max-width:720px;margin:auto}
+.demo h3{font-size:19px;color:#3d6865}
+.demo p{font-size:14px;line-height:2.3;color:#64777c}
+.demo a{color:#478b87}
+footer{background:#eaf1f1;text-align:center;padding:25px;color:#71878a;font-size:12px}
+.fab{position:fixed;bottom:22px;left:22px;z-index:10;background:#477f7b;color:white;border:0;border-radius:50%;width:58px;height:58px;font-size:26px;box-shadow:0 5px 20px #375b5b44;cursor:pointer}
+.panel{display:none;position:fixed;z-index:11;left:18px;bottom:91px;width:min(340px,calc(100vw - 36px));max-height:76vh;overflow:auto;background:white;border:1px solid #e2ebeb;border-radius:16px;box-shadow:0 12px 40px #253d4030;padding:18px;color:#334c52}
+.panel.open{display:block}
+.panelhead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #edf0f0;padding-bottom:13px;margin-bottom:14px}
+.panelhead strong{font-size:15px}
+.close,.sizes button{border:1px solid #dce7e5;background:#f5f9f8;border-radius:8px;padding:8px 12px;cursor:pointer}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.tool{border:1px solid #e4ebeb;background:#f8fbfa;border-radius:10px;padding:12px 7px;color:#456168;font-size:12px;min-height:70px;cursor:pointer}
+.tool span{display:block;font-size:20px;margin-bottom:6px}
+.tool.active{background:#e1f1ed;border-color:#548f89;color:#245f58}
+.sizes{display:flex;align-items:center;justify-content:space-between;margin:14px 0;font-size:12px;gap:7px}
+.reset{width:100%;padding:12px;border:0;background:#edf4f3;color:#477b77;border-radius:9px;margin-top:13px;cursor:pointer}
+.highcontrast{background:#101820!important;color:white!important}
+.highcontrast header,.highcontrast .card,.highcontrast .demo,.highcontrast .panel{background:#17242c!important;color:white!important;border-color:white!important}
+.highcontrast h1,.highcontrast h2,.highcontrast h3,.highcontrast p,.highcontrast a{color:white!important}
+.grayscale{filter:grayscale(1)}
+.underlines a{text-decoration:underline!important;text-decoration-thickness:2px!important}
+.bigcursor,.bigcursor button,.bigcursor a{cursor:crosshair!important}
+.reduce *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(max-width:600px){nav{gap:10px;font-size:11px}.cards{grid-template-columns:1fr}section{padding:38px 5%}.hero{padding:48px 6%}header{padding:16px 5%}}
+</style>
+</head>
+<body id="site">
+<header><div class="brand">◉ AccessEase</div><nav><a href="#">خانه</a><a href="#features">امکانات</a><a href="#about">درباره ما</a></nav></header>
+<main>
+<section class="hero">
+<span class="tag">دسترسی برای همه، بدون محدودیت</span>
+<h1>اینترنت برای همه،<br>دنیایی بدون مانع</h1>
+<p>دسترسی‌پذیری یعنی همه افراد بتوانند بدون توجه به شرایط و توانایی‌هایشان از دنیای دیجیتال استفاده کنند.</p>
+<button class="primary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">آشنایی با امکانات ←</button>
+</section>
+<section id="features">
+<h2>دسترسی‌پذیری چیست؟</h2><p class="sub">تجربه‌ای ساده‌تر و قابل استفاده برای تمام افراد</p>
+<div class="cards">
+<article class="card"><div class="ico">👁️</div><h3>دسترسی بصری</h3><p>امکان تغییر اندازه نوشته‌ها و افزایش وضوح محتوا.</p></article>
+<article class="card"><div class="ico">👂</div><h3>دسترسی شنیداری</h3><p>ارائه محتوای جایگزین برای اطلاعات صوتی.</p></article>
+<article class="card"><div class="ico">⌨️</div><h3>دسترسی حرکتی</h3><p>امکان استفاده از سایت با صفحه‌کلید و ابزارهای کمکی.</p></article>
+</div>
+</section>
+<section class="demo-area" id="about">
+<h2>محیط آزمایشی</h2><p class="sub">با منوی دسترسی‌پذیری، تجربه سایت را تغییر بده.</p>
+<div class="demo"><h3>یک تجربه بهتر برای همه</h3>
+<p>دسترسی‌پذیری وب به ما کمک می‌کند محتوای اینترنت را به شکلی طراحی کنیم که افراد بیشتری بتوانند از آن استفاده کنند.</p>
+<p>می‌توانی اندازه متن را تغییر بدهی، حالت کنتراست بالا را فعال کنی یا لینک‌ها را واضح‌تر ببینی.</p>
+<a href="#features">مشاهده امکانات دسترسی‌پذیری</a></div>
+</section>
+</main>
+<footer>AccessEase © 2026 — طراحی برای یک اینترنت فراگیرتر</footer>
+<button class="fab" id="open" aria-label="باز کردن منوی دسترسی‌پذیری" title="منوی دسترسی‌پذیری">♿</button>
+<div class="panel" id="panel" role="dialog" aria-label="تنظیمات دسترسی‌پذیری">
+<div class="panelhead"><strong>♿ منوی دسترسی‌پذیری</strong><button class="close" id="close" aria-label="بستن">✕</button></div>
+<div class="sizes"><span>اندازه متن</span><button id="minus">A−</button><b id="size">100%</b><button id="plus">A+</button></div>
+<div class="tools">
+<button class="tool" data-mode="highcontrast"><span>◐</span>کنتراست بالا</button>
+<button class="tool" data-mode="grayscale"><span>◒</span>حالت سیاه و سفید</button>
+<button class="tool" data-mode="underlines"><span>U̲</span>برجسته‌سازی لینک‌ها</button>
+<button class="tool" data-mode="reduce"><span>◫</span>کاهش حرکت</button>
+<button class="tool" data-mode="bigcursor"><span>↖</span>نشانگر متفاوت</button>
+<button class="tool" id="read"><span>🔊</span>خواندن متن</button>
+</div><button class="reset" id="reset">بازنشانی تنظیمات</button>
+</div>
+<script>
+const site=document.getElementById('site'),panel=document.getElementById('panel');
+let fontSize=100,speaking=false;
+document.getElementById('open').onclick=()=>panel.classList.toggle('open');
+document.getElementById('close').onclick=()=>panel.classList.remove('open');
+function setSize(){site.style.fontSize=fontSize+'%';document.getElementById('size').textContent=fontSize+'%'}
+document.getElementById('plus').onclick=()=>{fontSize=Math.min(150,fontSize+10);setSize()};
+document.getElementById('minus').onclick=()=>{fontSize=Math.max(80,fontSize-10);setSize()};
+document.querySelectorAll('[data-mode]').forEach(btn=>btn.onclick=()=>{let mode=btn.dataset.mode;site.classList.toggle(mode);btn.classList.toggle('active',site.classList.contains(mode))});
+document.getElementById('read').onclick=()=>{if(!('speechSynthesis'in window)){alert('خواندن صوتی در این مرورگر پشتیبانی نمی‌شود.');return}if(speaking){speechSynthesis.cancel();speaking=false;return}let msg=new SpeechSynthesisUtterance(document.querySelector('.demo').innerText);msg.lang='fa-IR';msg.onend=()=>speaking=false;speaking=true;speechSynthesis.speak(msg)};
+document.getElementById('reset').onclick=()=>{fontSize=100;setSize();['highcontrast','grayscale','underlines','reduce','bigcursor'].forEach(m=>site.classList.remove(m));document.querySelectorAll('[data-mode]').forEach(b=>b.classList.remove('active'));if('speechSynthesis'in window)speechSynthesis.cancel();speaking=false};
+</script>
+</body></html>
